@@ -1,0 +1,400 @@
+:root {
+  --purple-100: hsl(254, 88%, 90%);
+  --purple-500: hsl(256, 67%, 59%);
+
+  --yellow-100: hsl(31, 66%, 93%);
+  --yellow-500: hsl(39, 100%, 71%);
+
+  --grey: #f5f5f5;
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 7%);
+}
+
+@font-face {
+  font-family: "DM Sans";
+  src: url("assets/fonts/DMSans-VariableFont_opsz\,wght.ttf");
+  font-weight: 400 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  src: url("assets/fonts/DMSans-Italic-VariableFont_opsz\,wght.ttf");
+  font-weight: 400 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 18px;
+}
+
+body {
+  font-family: "DM Sans", system-ui;
+  line-height: 1.2;
+
+  background-color: var(--white);
+  color: var(--black);
+
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+
+  display: grid;
+  gap: 28px;
+  align-content: start;
+  justify-content: center;
+
+  background-color: var(--grey);
+  padding: 38px 16px;
+}
+
+.main__left-row {
+  display: grid;
+  gap: 28px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+
+  border-radius: 8px;
+  padding: clamp(1rem, 0.3267rem + 2.8729vw, 2.625rem);
+}
+
+.title {
+  font-size: clamp(1.4rem, 1.2343rem + 0.7072vw, 1.8rem);
+  font-weight: 500;
+
+  line-height: 1;
+  letter-spacing: -0.05rem;
+}
+
+.title-bigger {
+  font-size: clamp(1.8rem, 1.6544rem + 0.6214vw, 2.4rem);
+}
+
+.title span.italic {
+  font-style: italic;
+}
+
+.centered {
+  align-items: center;
+}
+
+/* ------------ CARDS ------------ */
+/* Main */
+.main-card {
+  background-color: var(--purple-500);
+  color: var(--white);
+  padding: 48px 26px;
+}
+.main-card__title {
+  font-size: clamp(2.6rem, 2.3573rem + 1.0356vw, 3.6rem);
+
+  text-align: center;
+
+  letter-spacing: normal;
+}
+.main-card__title--yellow {
+  color: var(--yellow-500);
+}
+.main-card__rating {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-card__rating--img {
+  max-width: 10rem;
+  height: auto;
+
+  margin-bottom: 0.6rem;
+}
+.main-card__rating--description {
+  font-size: clamp(1rem, 0.9171rem + 0.3536vw, 1.2rem);
+}
+
+/* Multiple platforms */
+.card-multiple-platforms {
+  background-color: var(--white);
+}
+
+.card-multiple-platforms__img {
+  width: 100%;
+  height: auto;
+
+  filter: drop-shadow(-2px 8px 4px rgba(153, 153, 153, 0.1));
+}
+
+/* Consistent posting schedule */
+.card-consistent-posting-schedule {
+  background-color: var(--yellow-500);
+
+  padding-bottom: 0;
+  overflow-y: hidden;
+}
+.card-consistent-posting-schedule__img {
+  max-width: 65%;
+  height: auto;
+
+  margin-bottom: -1.4rem;
+}
+
+/* Schedule social media */
+.card-schedule-social-media {
+  background-color: var(--purple-100);
+
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.card-schedule-social-media__img {
+  width: 100%;
+  height: auto;
+}
+.card-schedule-social-media__description {
+  font-size: clamp(1rem, 0.9171rem + 0.3536vw, 1.2rem);
+  text-align: center;
+
+  margin: 0 16px;
+}
+
+/* Grow followers */
+.card-grow-followers {
+  background-color: var(--purple-500);
+  color: var(--white);
+
+  padding: 16px 20%;
+
+  gap: 2rem;
+}
+.card-grow-followers__img {
+  max-width: 100%;
+  height: auto;
+}
+.card-grow-followers__title {
+  text-align: center;
+}
+
+/* Audience growth */
+.card-faster-audience-growth {
+  background-color: var(--white);
+}
+.card-faster-audience-growth__title--percentage {
+  display: block;
+  font-weight: 500;
+  font-size: 2.6rem;
+
+  margin-bottom: 0.4rem;
+}
+.card-faster-audience-growth__title--percentage span {
+  display: inline-block;
+  transform: translateY(-0.15rem);
+}
+.card-faster-audience-growth__title--small {
+  display: block;
+  font-size: clamp(1rem, 0.9171rem + 0.3536vw, 1.2rem);
+  font-weight: 400;
+}
+.card-faster-audience-growth__img {
+  max-width: 58%;
+  height: auto;
+}
+
+/* Create Content */
+.card-create-content {
+  background-color: var(--yellow-100);
+}
+.card-create-content__title--purple {
+  color: var(--purple-500);
+}
+.card-create-content__img {
+  max-width: 60%;
+  height: auto;
+}
+
+/* AI write content */
+.card-ai-write-content {
+  background-color: var(--yellow-500);
+}
+.card-ai-write-content__img {
+  max-width: 70%;
+  height: auto;
+}
+
+/* -------- Media queries -------- */
+@media (min-width: 600px) {
+  main {
+    padding-left: clamp(3.75rem, -7.0588rem + 28.8235vw, 16rem);
+    padding-right: clamp(3.75rem, -7.0588rem + 28.8235vw, 16rem);
+  }
+}
+
+@media (min-width: 1280px) {
+  .card {
+    padding: 28px;
+  }
+
+  .title {
+    line-height: 0.9;
+  }
+
+  main {
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+      "left-row main main schedule-social-media"
+      "left-row multiple-platforms consistent-posting-schedule schedule-social-media"
+      "left-row faster-audience-growth grow-followers grow-followers";
+
+    padding: 42px 10%;
+  }
+
+  .main__left-row {
+    grid-area: left-row;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  /* ------------ CARDS ------------ */
+  /* Main */
+  .main-card {
+    grid-area: main;
+
+    padding: 64px 32px;
+  }
+  .main-card__img {
+    max-width: 11rem;
+  }
+
+  /* Multiple platforms */
+  .card-multiple-platforms {
+    grid-area: multiple-platforms;
+
+    overflow-x: hidden;
+  }
+  .card-multiple-platforms__img {
+    width: 18rem;
+    height: auto;
+  }
+
+  /* Consistent posting schedule */
+  .card-consistent-posting-schedule {
+    grid-area: consistent-posting-schedule;
+  }
+  .card-consistent-posting-schedule__img {
+    max-width: 100%;
+    height: auto;
+
+    margin-bottom: -5.1rem;
+  }
+
+  /* Schedule social media */
+  .card-schedule-social-media {
+    grid-area: schedule-social-media;
+
+    align-items: start;
+
+    overflow-x: hidden;
+  }
+  .card-schedule-social-media__img {
+    width: auto;
+    height: 19rem;
+  }
+  .card-schedule-social-media__description {
+    text-align: start;
+
+    margin: 0;
+  }
+
+  /* Grow followers */
+  .card-grow-followers {
+    grid-area: grow-followers;
+
+    flex-direction: row;
+    gap: 12px;
+  }
+  .card-grow-followers__img {
+    max-width: 45%;
+  }
+  .card-grow-followers__title {
+    text-align: start;
+  }
+
+  /* Audience growth */
+  .card-faster-audience-growth {
+    grid-area: faster-audience-growth;
+  }
+  .card-faster-audience-growth__title--percentage {
+    font-size: 3.2rem;
+  }
+  .card-faster-audience-growth__title--small {
+    font-size: 1rem;
+  }
+  .card-faster-audience-growth__img {
+    max-width: 80%;
+  }
+
+  /* Create Content */
+  .card-create-content {
+    grid-row: 1 / span 1;
+  }
+  .card-create-content__img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* AI write content */
+  .card-ai-write-content {
+    grid-row: 2 / span 1;
+
+    justify-content: space-between;
+  }
+  .card-ai-write-content__img {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 1700px) {
+  main {
+    padding: 48px 16%;
+  }
+}
+
+@media (min-width: 1900px) {
+  main {
+    padding: 48px 22%;
+  }
+  .card-schedule-social-media__description {
+    font-size: 1.1rem;
+  }
+}
+
+/* -------- Attribution -------- */
+.attribution {
+  margin-top: auto;
+
+  font-size: 1rem;
+  width: 100%;
+  height: 50px;
+
+  padding: 10px 8px;
+
+  background-color: #2f2235;
+  color: var(--white);
+
+  text-align: center;
+}
+.attribution a {
+  color: #44ccff;
+}
