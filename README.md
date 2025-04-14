@@ -6,8 +6,7 @@ This is my solution to the [Bento grid challenge on Frontend Mentor](https://www
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
+  - [Solution](#solution)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
