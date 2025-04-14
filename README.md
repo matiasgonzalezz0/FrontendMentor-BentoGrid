@@ -24,15 +24,15 @@ To achieve this, on smaller screens, the cards are displayed vertically. On larg
 
 ### Solution Screenshots
 
+#### Links
+
+- Solution Site: [Bento Grid](https://matiasgonzalezz0.github.io/FrontendMentor-BentoGrid/)
+
 #### Desktop
 ![](./screenshots/desktop-1920x1080.png)
 
 #### Mobile
 ![](./screenshots/mobile-top.png) ![](./screenshots/mobile-bottom.png)
-
-#### Links
-
-- Solution Site: [Bento Grid](https://matiasgonzalezz0.github.io/FrontendMentor-BentoGrid/)
 
 ## My process
 
