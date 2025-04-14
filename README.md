@@ -22,16 +22,16 @@ This is my solution to the [Bento grid challenge on Frontend Mentor](https://www
 Users should be able to view all the content of the website in its correct layout.
 To achieve this, on smaller screens, the cards are displayed vertically. On larger screens, users should see a Bento Grid layout with the contents of the page.
 
-### Solution Screenshots
+### Solution
 
 #### Links
 
 - Solution Site: [Bento Grid](https://matiasgonzalezz0.github.io/FrontendMentor-BentoGrid/)
 
-#### Desktop
+#### Desktop Screenshots
 ![](./screenshots/desktop-1920x1080.png)
 
-#### Mobile
+#### Mobile Screenshots
 ![](./screenshots/mobile-top.png) ![](./screenshots/mobile-bottom.png)
 
 ## My process
